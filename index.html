@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing page moderna e responsiva para portfólio no GitHub." />
+  <title>Laryssa Souza | Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">NOVA<span>.</span></a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato" class="nav-button">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="eyebrow">PROJETO FRONT-END</span>
+          <h1>
+            Uma landing page moderna para transformar
+            <span>ideias em experiências.</span>
+          </h1>
+          <p>
+            Um projeto responsivo, elegante e fácil de personalizar,
+            desenvolvido para demonstrar habilidades em HTML, CSS e JavaScript.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#recursos" class="button primary">Conhecer projeto</a>
+            <a href="https://github.com/larysouzax" target="_blank" class="button secondary">
+              Ver GitHub
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong>100%</strong>
+              <span>Responsivo</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>Tecnologias</span>
+            </div>
+            <div>
+              <strong>Clean</strong>
+              <span>Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="browser-top">
+            <span></span><span></span><span></span>
+          </div>
+
+          <div class="preview">
+            <div class="preview-badge">Seu projeto</div>
+            <h2>Crie. Desenvolva. Publique.</h2>
+            <p>Um layout pensado para causar uma boa primeira impressão.</p>
+
+            <div class="preview-cards">
+              <div class="mini-card">
+                <span>01</span>
+                <strong>Design</strong>
+              </div>
+              <div class="mini-card">
+                <span>02</span>
+                <strong>Código</strong>
+              </div>
+              <div class="mini-card">
+                <span>03</span>
+                <strong>Deploy</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="recursos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">RECURSOS</span>
+          <h2>Feita para destacar seu trabalho</h2>
+          <p>
+            Uma base simples o suficiente para aprender e completa o suficiente
+            para entrar no seu portfólio.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="feature-card">
+            <div class="icon">&lt;/&gt;</div>
+            <h3>Código organizado</h3>
+            <p>
+              Arquivos separados e estrutura fácil de entender para facilitar
+              futuras alterações.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">↔</div>
+            <h3>Responsividade</h3>
+            <p>
+              O layout se adapta a celulares, tablets e computadores sem perder
+              a identidade visual.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon">✦</div>
+            <h3>Visual moderno</h3>
+            <p>
+              Gradientes, cartões e microinterações deixam a página mais
+              profissional sem exageros.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="sobre">
+      <div class="container about-content">
+        <div class="about-visual">
+          <div class="code-window">
+            <div class="code-line"><span>const</span> projeto = {</div>
+            <div class="code-line indent">design: <b>"moderno"</b>,</div>
+            <div class="code-line indent">responsivo: <b>true</b>,</div>
+            <div class="code-line indent">feitoCom: <b>"dedicação"</b></div>
+            <div class="code-line">};</div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">SOBRE O PROJETO</span>
+          <h2>Um ótimo projeto para evoluir no front-end</h2>
+          <p>
+            Esta landing page foi criada como uma base de estudo e portfólio.
+            Você pode alterar textos, cores, seções, imagens e links para
+            transformar o projeto em algo totalmente seu.
+          </p>
+
+          <ul class="check-list">
+            <li>HTML semântico</li>
+            <li>CSS com variáveis e responsividade</li>
+            <li>JavaScript para interação do menu</li>
+            <li>Estrutura pronta para GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section" id="contato">
+      <div class="container">
+        <div class="cta-box">
+          <span class="eyebrow">VAMOS CRIAR?</span>
+          <h2>Personalize este projeto e transforme-o em parte do seu portfólio.</h2>
+          <p>
+            Troque os textos, coloque seu nome, adicione seus projetos e publique
+            gratuitamente pelo GitHub Pages.
+          </p>
+          <a href="mailto:larysouzax23@gmail.com" class="button light">Falar comigo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#inicio" class="logo">NOVA<span>.</span></a>
+      <p>Feito com HTML, CSS e JavaScript.</p>
+      <span id="year"></span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
