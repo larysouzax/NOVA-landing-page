@@ -519,7 +519,7 @@ body.light-theme {
 
   }
 
-  body.light-theme.header {
+  body.light-theme .header {
     background: rgba(244, 247, 251, 0.88);
   }
 

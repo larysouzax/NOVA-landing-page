@@ -2,7 +2,7 @@ const menuButton = document.getElementById("menuButton");
 const menu = document.getElementById("menu");
 const menuLinks = document.querySelectorAll(".menu a");
 const year = document.getElementById("year");
-const themeToggle = document.getElementById("themeToggle");
+
 
 menuButton.addEventListener("click", () => {
   menu.classList.toggle("active");
@@ -16,10 +16,12 @@ menuLinks.forEach((link) => {
 
 year.textContent = `© ${new Date().getFullYear()}`;
 
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("ligth-theme");
+const themeToggle = document.getElementById("themeToggle");
 
-  if(document.body.classList.contains("ligth-theme")) {
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("light-theme");
+
+  if(document.body.classList.contains("light-theme")) {
     themeToggle.textContent = "☀️";
   } else {
     themeToggle.textContent = "🌙" ;
