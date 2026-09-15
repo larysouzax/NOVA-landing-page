@@ -493,3 +493,46 @@ a {
     text-align: center;
   }
 }
+
+.theme-toggle {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius:10px;
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+body.light-theme {
+  --bg: #f4f7fb;
+  --bg-soft: #ffffff;
+  --card: rgba(0, 0, 0, 0.04);
+  --text: #172033;
+  --muted: #64748b;
+  --border: rgba(0, 0, 0, 0.1);
+  --white: #172033;
+
+  background:
+   radial-gradient(circle at 15% 20%, rgba(79, 140, 255, 0.12), transparent 30%),#f4f7fb;
+
+  }
+
+  body.light-theme.header {
+    background: rgba(244, 247, 251, 0.88);
+  }
+
+  body.light-theme .code-window {
+    background: #ffffff;
+  }
+
+  body.light-theme .code-line {
+    color: #334155;
+  }
+
+  body.light-theme .secondary {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  
