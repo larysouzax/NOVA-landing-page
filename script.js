@@ -83,3 +83,61 @@ const revealOnScroll = () => {
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
+
+// FORMULARIO
+
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+const submitButton = document.getElementById("submitButton");
+
+contactForm.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  if (name === ""  || email === ""  || message === "" ) {
+    formMessage.textContent = "Por favor, preencha todos os campos.";
+    return;
+  }
+
+  submitButton.textContent = "Enviando...";
+  submitButton.disabled = true;
+
+  try {
+    const formData = new FormData(contactForm);
+    const response = await fetch("https://formspree.io/f/xppwzeev", {
+      method: "POST",
+      body: formData,
+      headers: {
+        accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      submitButton.textContent = "Mensagem enviada ✓";
+      formMessage.textContent = "Sua mensagem foi enviada com sucesso!";
+
+      contactForm.reset();
+
+      setTimeout(() => {
+        submitButton.textContent = "Enviar mensagem";
+        submitButton.disabled = false;
+        formMessage.textContent = "";
+      }, 3000);
+
+    } else {
+      formMessage.textContent =
+        "Não foi possível enviar a mensagem.";
+      submitButton.textContent = "Tentar novamente";
+      submitButton.disabled = false;
+    }
+    
+  } catch (error) {
+    formMessage.textContent = "Não foi possível enviar a mensagem.";
+    submitButton.textContent = "Tentar novamente";
+    submitButton.disabled = false;
+  }
+
+});
